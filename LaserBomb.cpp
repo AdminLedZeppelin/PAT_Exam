@@ -3,11 +3,11 @@
 using namespace std;
 int n, r;
 const int N = 5000;
-int f[N][N]
+int f[N][N];
 
 int main() {
     cin >> n >> r;
-    int xm = ym = r;
+    int xm = r, ym = r;
     int sum = 0;
     for (int i = 0; i <= n; i++) {
         int x, y, w;
@@ -20,7 +20,7 @@ int main() {
     }
 
     for (int i = 1; i <= xm; i++) {
-        for (j = 1; j <= ym; j++) {
+        for (int j = 1; j <= ym; j++) {
             f[i][j] += f[i - 1][j] + f[i][j - 1] - f[i - 1][j - 1];
         }
     } 
@@ -34,7 +34,7 @@ int main() {
 
 }
 
-
+//二位前缀和。
 
 // array[i][j]
 // s -> sum
