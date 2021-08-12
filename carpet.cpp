@@ -7,8 +7,8 @@ int final[N][N];
 
 int main(){
     cin >> n>> m;
-    // memset(a,0,sizeof(a));
-    // memset(final,0,sizeof(final));
+     memset(a,0,sizeof(a));
+     memset(final,0,sizeof(final));
     for (int j = 0; j < m; j++) {
         int x1,y1,x2,y2;
         cin>> x1>> y1 >> x2 >> y2;
